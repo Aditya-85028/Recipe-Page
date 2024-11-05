@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Recipes</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <h1>My Recipes</h1>
+        <nav>
+            <a href="about.html">About Me</a>
+        </nav>
+    </header>
+
+    <aside>
+        <h2>Filter Recipes</h2>
+        <select id="filter-cuisine" onchange="filterRecipes()">
+            <option value="all">All Cuisines</option>
+            <option value="Italian">Italian</option>
+            <option value="Mexican">Mexican</option>
+            <!-- Add more cuisines as needed -->
+        </select>
+    </aside>
+
+    <main id="recipe-list">
+        <!-- JavaScript will dynamically load recipe cards here -->
+    </main>
+
+    <script src="script.js"></script>
+</body>
+</html>
