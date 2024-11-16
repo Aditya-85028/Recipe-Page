@@ -1,0 +1,46 @@
+[
+    {
+        "title": "Spaghetti",
+        "cuisine": ["Italian", "Mediterranean"],
+        "cookingTime": "30 mins",
+        "macros": { "calories": 500, "protein": 15, "carbs": 75, "fat": 20 },
+        "ingredients": ["Spaghetti", "Eggs", "Parmesan", "Pancetta"],
+        "slug": "potato",
+        "course": "Main Course",
+        "mainIngredient": "Pasta",
+        "dietary": ["Dairy"]
+    },
+    {
+        "title": "Tacos",
+        "cuisine": ["Mexican"],
+        "cookingTime": "20 mins",
+        "macros": { "calories": 400, "protein": 10, "carbs": 50, "fat": 15 },
+        "ingredients": ["Tortillas", "Ground Beef", "Cheese", "Lettuce"],
+        "slug": "tacos",
+        "course": "Main Course",
+        "mainIngredient": "Beef",
+        "dietary": ["Gluten-Free"]
+    },
+    {
+        "title": "Spaghetti",
+        "cuisine": ["Italian", "Mediterranean"],
+        "cookingTime": "30 mins",
+        "macros": { "calories": 500, "protein": 15, "carbs": 75, "fat": 20 },
+        "ingredients": ["Spaghetti", "Eggs", "Parmesan", "Pancetta"],
+        "slug": "potato",
+        "course": "Main Course",
+        "mainIngredient": "Pasta",
+        "dietary": ["Dairy"]
+    },
+    {
+        "title": "Tacos",
+        "cuisine": ["Mexican"],
+        "cookingTime": "20 mins",
+        "macros": { "calories": 400, "protein": 10, "carbs": 50, "fat": 15 },
+        "ingredients": ["Tortillas", "Ground Beef", "Cheese", "Lettuce"],
+        "slug": "tacos",
+        "course": "Main Course",
+        "mainIngredient": "Beef",
+        "dietary": ["Gluten-Free"]
+    }
+]
