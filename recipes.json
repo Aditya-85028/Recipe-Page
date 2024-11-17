@@ -1,22 +1,22 @@
 [
     {
-        "title": "Spaghetti",
-        "cuisine": ["Italian", "Mediterranean"],
+        "title": "Cottage Cheese Pasta",
+        "cuisine": ["Italian"],
         "cookingTime": "30 mins",
         "macros": { "calories": 500, "protein": 15, "carbs": 75, "fat": 20 },
-        "ingredients": ["Spaghetti", "Eggs", "Parmesan", "Pancetta"],
+        "ingredients": ["Pasta", "Cottage Cheese", "Mozzerella", "Parmesan", "Tomato Sauce", "Onions", "Garlic"],
         "slug": "potato",
         "course": "Main Course",
         "mainIngredient": "Pasta",
         "dietary": ["Dairy"]
     },
     {
-        "title": "Tacos",
+        "title": "TVP Tacos",
         "cuisine": ["Mexican"],
         "cookingTime": "20 mins",
         "macros": { "calories": 400, "protein": 10, "carbs": 50, "fat": 15 },
         "ingredients": ["Tortillas", "Ground Beef", "Cheese", "Lettuce"],
-        "slug": "tacos",
+        "slug": "tvp-tacos",
         "course": "Main Course",
         "mainIngredient": "Beef",
         "dietary": ["Gluten-Free"]
