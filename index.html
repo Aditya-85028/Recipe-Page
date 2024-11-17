@@ -14,19 +14,61 @@
         </nav>
     </header>
 
-    <aside>
-        <h2>Filter Recipes</h2>
-        <select id="filter-cuisine" onchange="filterRecipes()">
-            <option value="all">All Cuisines</option>
-            <option value="Italian">Italian</option>
-            <option value="Mexican">Mexican</option>
-            <!-- Add more cuisines as needed -->
-        </select>
-    </aside>
+    <div class="main-container">
+        <!-- Sidebar Filter Section -->
+        <aside class="sidebar-filter">
+            <h2>Recipe Index</h2>
+            <input type="text" id="search" placeholder="Search" oninput="searchRecipes()" />
 
-    <main id="recipe-list">
-        <!-- JavaScript will dynamically load recipe cards here -->
-    </main>
+            <p>Use filters to find exactly what you’re looking for:</p>
+            <div class="filter-category">
+                <h3>By Cuisine</h3>
+                <select id="filter-cuisine" onchange="filterRecipes()">
+                    <option value="all">All Cuisines</option>
+                    <option value="Italian">Italian</option>
+                    <option value="Mediterranean">Mediterranean</option>
+                    <option value="Mexican">Mexican</option>
+                </select>
+            </div>
+
+            <div class="filter-category">
+                <h3>By Course/Meal Type</h3>
+                <select id="filter-course" onchange="filterRecipes()">
+                    <option value="all">All Courses</option>
+                    <option value="Appetizer">Appetizer</option>
+                    <option value="Main Course">Main Course</option>
+                    <option value="Dessert">Dessert</option>
+                </select>
+            </div>
+
+            <div class="filter-category">
+                <h3>By Main Ingredient</h3>
+                <select id="filter-ingredient" onchange="filterRecipes()">
+                    <option value="all">All Ingredients</option>
+                    <option value="Chicken">Chicken</option>
+                    <option value="Beef">Beef</option>
+                    <option value="Cheese">Cheese</option>
+                </select>
+            </div>
+
+            <div class="filter-category">
+                <h3>By Dietary</h3>
+                <select id="filter-dietary" onchange="filterRecipes()">
+                    <option value="all">All Dietary</option>
+                    <option value="Vegan">Vegan</option>
+                    <option value="Gluten-Free">Gluten-Free</option>
+                    <option value="Keto">Keto</option>
+                </select>
+            </div>
+
+            <button onclick="clearFilters()" class="clear-filters">Clear Filters</button>
+        </aside>
+
+        <!-- Recipe List Section -->
+        <main id="recipe-list" class="recipe-grid">
+            <!-- JavaScript will dynamically load recipe cards here -->
+        </main>
+    </div>
 
     <script src="script.js"></script>
 </body>
