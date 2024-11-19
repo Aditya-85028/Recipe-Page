@@ -47,6 +47,17 @@ function filterRecipes() {
     displayRecipes(filteredRecipes);
 }
 
+function clearFilters() {
+    // Reset all filter dropdowns to "all"
+    document.getElementById("filter-cuisine").value = "all";
+    document.getElementById("filter-course").value = "all";
+    document.getElementById("filter-ingredient").value = "all";
+    document.getElementById("filter-dietary").value = "all";
+
+    // Display all recipes
+    displayRecipes(recipes);
+}
+
 // Load all recipes initially and set up event listeners for each filter dropdown
 document.addEventListener("DOMContentLoaded", () => {
     loadRecipes(); // Load recipes from JSON file
@@ -56,4 +67,7 @@ document.addEventListener("DOMContentLoaded", () => {
     document.getElementById("filter-course").addEventListener("change", filterRecipes);
     document.getElementById("filter-ingredient").addEventListener("change", filterRecipes);
     document.getElementById("filter-dietary").addEventListener("change", filterRecipes);
+
+    // Add click event listener for the "Clear Filters" button
+    document.querySelector(".clear-filters").addEventListener("click", clearFilters);
 });

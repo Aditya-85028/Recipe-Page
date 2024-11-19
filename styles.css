@@ -45,9 +45,7 @@ header nav a {
     padding: 20px;
     margin: 0 auto;
     max-width: 1000px;
-
 }
-
 
 .recipe-card:hover {
     transform: scale(1.02);
@@ -356,27 +354,50 @@ header nav a {
     color: #58616A; /* Dark Gray-Blue */
     margin: 5px 0;
 }
-.recipe-image-container {
-    width: 100%;
-    overflow: hidden;
-    max-height: 200px; /* Optional: Restricts the image height */
-}
 
-.recipe-image-container img {
-    width: 100%;
-    height: auto;
-    display: block;
-    border-bottom: 2px solid #ddd; /* Optional: Adds a separation line between image and title */
-}
+/* Fixes for Index Page on Mobile */
+@media (max-width: 768px) {
+    header {
+        padding: 15px;
+        text-align: center;
+        font-size: 1.5em;
+    }
 
-.recipe-title {
-    padding: 10px;
-    background-color: #cad2c5; /* Light background for title area */
-}
+    header nav a {
+        display: block;
+        margin: 10px 0;
+        font-size: 0.9em;
+    }
 
-.recipe-title h3 {
-    margin: 0;
-    font-size: 1.1em;
-    color: #354f52;
-}
+    .main-container {
+        flex-direction: column;
+        margin: 10px;
+        padding: 10px;
+    }
 
+    .sidebar-filter {
+        width: 100%;
+        margin-bottom: 20px;
+    }
+
+    #recipe-list {
+        grid-template-columns: repeat(auto-fill, minmax(150px, 1fr));
+        gap: 15px;
+        padding: 10px;
+    }
+
+    .recipe-card {
+        width: 100%;
+        height: auto;
+        padding: 10px;
+    }
+
+    .recipe-card img {
+        max-height: 120px;
+        object-fit: cover;
+    }
+
+    .recipe-card h3 {
+        font-size: 1em;
+    }
+}
